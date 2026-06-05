@@ -1,5 +1,5 @@
 {
-  "name": "ghost-box",
+  "name": "box",
   "build": {
     "dockerfile": "../Dockerfile",
     "context": ".."
@@ -7,7 +7,7 @@
   "workspaceFolder": "/workspace",
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
   "mounts": [
-    "source=ghost-box-home,target=/home/node,type=volume"
+    "source=box-home,target=/home/node,type=volume"
   ],
   "remoteUser": "node",
   "customizations": {

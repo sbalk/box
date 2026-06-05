@@ -1,15 +1,15 @@
 services:
-  ghost-box:
+  box:
     build:
       context: .
       dockerfile: Dockerfile
-    image: ghost-box
+    image: box
     working_dir: /workspace
     volumes:
       - .:/workspace
-      - ghost-box-home:/home/node
+      - box-home:/home/node
     stdin_open: true
     tty: true
 
 volumes:
-  ghost-box-home:
+  box-home:
